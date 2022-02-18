@@ -36,6 +36,7 @@
   </div>
   </div>
   <button type="submit" class="btn btn-primary" name="creat">Submit</button>
+  <a href="read.php" class="link">View</a>
 </form>
 
 </body>

@@ -19,9 +19,10 @@ if (isset ($_POST['creat'])){
     $user_data = 'id='.$id. '&first='.$first. '&last='.$last. '&birth='.$birth. '&depart='.$depart. '&salary='.$salary. 'function='.$function. 'img='.$img;
 echo $user_data;
 
-$sql = "INSERT INTO `chellott`(`ID`, `First Name`, `Last Name`, `Birth Day`, `department`, `Salary`, `function`, `Photo`) VALUES('$id','$first','$last', '$birth','$depart','$salary';'$function','$img')";
-$result = mysqli_query($conn,$sql);
-
+$sql = "INSERT INTO `personnes`(`ID`, `First Name`, `Last Name`, `Date of Birth`, `department`, `Salary`, `Function`, `Photo`)
+ VALUES
+ ('$id','$first','$last','$birth','$depart',$salary,'$function','$img')";
+$result = mysqli_query($conn, $sql);
 
 
 }
