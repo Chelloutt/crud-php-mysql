@@ -48,7 +48,8 @@ include "read2.php"
 			      <td><?=$rows['Salary']?></td>
 			      <td><?=$rows['Function']?></td>
 			      <td><?php echo $rows['Photo']; ?></td>
-				  <td><a href=""class="btn">Update</a></td>
+				  <td><a href="update.php?id=<?=$rows['ID']?>
+				           "class="btn">Update</a></td>
 
 			      </td>
 			    </tr>
