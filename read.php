@@ -49,7 +49,10 @@ include "read2.php"
 			      <td><?=$rows['Function']?></td>
 			      <td><?php echo $rows['Photo']; ?></td>
 				  <td><a href="update.php?id=<?=$rows['ID']?>
-				           "class="btn">Update</a></td>
+				           "class="btn btn-success">Update</a>
+				      <a href="delete.php?id=<?=$rows['ID']?>
+				           "class="btn btn-danger">Delete</a>
+			      </td>
 
 			      </td>
 			    </tr>
